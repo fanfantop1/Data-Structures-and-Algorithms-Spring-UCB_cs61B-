@@ -14,7 +14,8 @@ class dog:
             return "WOOF WOOF"
 
 maya = dog("maya", "small")
-
+maya.toy = "car"
 
 print(maya.bark())
 print(maya.name)
+print(maya.toy)
