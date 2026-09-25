@@ -1,9 +1,9 @@
 {
-    "java.jdt.ls.java.home": "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath\\java.exe", // 替换为你真实的 JDK 25 路径
+    "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-25", // 替换为你真实的 JDK 25 路径
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-25",
-            "path": "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath\\java.exe", // 替换为真实路径
+            "path": "C:\\Program Files\\Java\\jdk-25", // 替换为你真实的 JDK 25 路径
             "default": true
         }
     ],

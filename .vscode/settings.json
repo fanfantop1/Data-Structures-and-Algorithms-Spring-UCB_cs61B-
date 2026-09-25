@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "Java\\class1",
+        "Java\\class2"
+    ],
+    "java.project.referencedLibraries": []
+}
