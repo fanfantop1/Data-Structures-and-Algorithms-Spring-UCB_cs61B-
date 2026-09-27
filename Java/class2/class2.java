@@ -1,8 +1,8 @@
-class dog {
+class Dog {
 
     int age;
 
-    dog(int a) {
+    Dog(int a) {
         age = a;
     }
 
@@ -16,11 +16,31 @@ class dog {
         }
     }
 
+    Dog maxdog(Dog otherDog) {
+        if (this.age > otherDog.age) {
+            return this;
+        } else {
+            return otherDog;
+        }
+
+    }
+
+
+    static Dog maxdog(Dog d1, Dog d2) {
+        if (d1.age > d2.age) {
+            return d1;
+        } else {
+            return d2;
+        }
+    }
+
 }
 
+
+
 void main() {
-    dog d1 = new dog(3);
-    dog d2 = new dog(6);
+    Dog d1 = new Dog(3);
+    Dog d2 = new Dog(6);
     d1.bark();
     d2.bark();
 
