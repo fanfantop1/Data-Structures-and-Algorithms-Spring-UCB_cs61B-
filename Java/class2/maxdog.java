@@ -1,5 +1,7 @@
+package class2;
 
-class maxdog{
+
+public class maxdog{
     void main() {
         
         Dog d1 = new Dog(3);
@@ -9,6 +11,7 @@ class maxdog{
         d1.maxdog(d2).bark();
     }
 
+    
 
 
 }
