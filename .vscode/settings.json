@@ -1,8 +1,19 @@
 {
     "java.project.sourcePaths": [
+        "Java/class3",
         "Java/class2",
         "Java/class1",
-        "Java/class3"
+        "Java/class4"
     ],
-    "java.project.referencedLibraries": []
+    "java.project.referencedLibraries": [
+        "test-lib\\**\\*.jar"
+    ],
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+        "source": "PowerShell",
+        "args": ["-NoExit", "/c", "chcp 65001"]
+     }
+},
+"java.debug.settings.onBuildFailureProceed": true
 }
