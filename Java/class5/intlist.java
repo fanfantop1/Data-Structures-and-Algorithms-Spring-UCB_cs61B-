@@ -41,12 +41,15 @@ public class intlist {
         return current.first;
     }
 
-    // public intlist listadd(intlist L) {
-    //     intlist newrest = rest.listadd();
-    //     return new intlist(first + 1, newrest);
+    public intlist listadd(int i) {
+        intlist newrest = null;
+        if (rest != null) {
+            newrest = rest.listadd(i);
+        }
+        return new intlist(first + i, newrest);
         
-        
-    // }
+    }
+
     public static void main() {
         intlist L = new intlist(5, null);
         L.first = 5;
@@ -57,10 +60,17 @@ public class intlist {
         L.rest.rest.rest = new intlist(20, null);
 
         intlist L1 = new intlist(1, new intlist(2, new intlist(3, null)));
-        intlist L3 = new intlist(3,null);
+        intlist L3 = new intlist(5,null);
         IO.println(L1.first);
-        L3 = new intlist(2,L3);
+        L3 = new intlist(3,L3);
         L3 = new intlist(1,L3);
+
+
+        L3 = L3.listadd( 1);
+
+
+
+
 
         }
 

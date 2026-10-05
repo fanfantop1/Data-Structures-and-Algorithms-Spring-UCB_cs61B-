@@ -50,4 +50,30 @@ public class intlisttest {
         int result = L.rest.getcurrent(L.rest, 1);
         assertThat(result).isEqualTo(expect);
     }
+
+    
+    @Test 
+    public void testlistadd() {
+        intlist L1 = new intlist(5, null);
+        L1.rest = new intlist(10, null);
+        L1.rest.rest = new intlist(15, null);
+        L1.rest.rest.rest = new intlist(20, null);
+
+        intlist L2 = L1.listadd( 1);
+        int expect1 = 6;
+        int expect2 = 11;
+        int expect3 = 16;
+        int expect4 = 21;
+
+        assertThat(L2.first).isEqualTo(expect1);
+        assertThat(L2.rest.first).isEqualTo(expect2);
+        assertThat(L2.rest.rest.first).isEqualTo(expect3);
+        assertThat(L2.rest.rest.rest.first).isEqualTo(expect4);
+        assertThat(L1.first).isEqualTo(5);
+
+
+        intlist L3 = L1.listadd( 2);
+        int expect5 = 7;  
+        assertThat(L3.first).isEqualTo(expect5);
+    }
 }
