@@ -1,17 +1,11 @@
-package class2;
-
-
 public class maxdog{
-    void main() {
+    public static void main(String[] args) {
         
-        Dog d1 = new Dog(3);
-        Dog d2 = new Dog(6);
-        d1.bark();
-        d2.bark();
-        d1.maxdog(d2).bark();
+        Dog d3 = new Dog(3);
+        Dog d4 = new Dog(6);
+        d3.bark();
+        d4.bark();
+        d3.maxdog(d4).bark();
     }
-
     
-
-
 }
