@@ -41,12 +41,12 @@ public class intlist {
         return current.first;
     }
 
-    public intlist listadd(intlist L) {
-        intlist newrest = rest.listadd();
-        return new intlist(first + 1, newrest);
+    // public intlist listadd(intlist L) {
+    //     intlist newrest = rest.listadd();
+    //     return new intlist(first + 1, newrest);
         
         
-    }
+    // }
     public static void main() {
         intlist L = new intlist(5, null);
         L.first = 5;
