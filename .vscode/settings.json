@@ -4,7 +4,8 @@
         "Java/class3",
         "Java/class2",
         "Java/class1",
-        "Java/class5"
+        "Java/class5",
+        "Java/class6"
     ],
     "java.project.referencedLibraries": [
         "test-lib\\**\\*.jar"

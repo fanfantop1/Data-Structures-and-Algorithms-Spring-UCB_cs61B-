@@ -1,9 +1,9 @@
 {
-    "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-25", // 替换为你真实的 JDK 25 路径
+    "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-25", 
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-25",
-            "path": "C:\\Program Files\\Java\\jdk-25", // 替换为你真实的 JDK 25 路径
+            "path": "C:\\Program Files\\Java\\jdk-25", 
             "default": true
         }
     ],
