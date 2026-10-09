@@ -1,11 +1,12 @@
 {
     "java.project.sourcePaths": [
+        "Java/class6",
+        "Java/class5",
         "Java/class4",
         "Java/class3",
         "Java/class2",
         "Java/class1",
-        "Java/class5",
-        "Java/class6"
+        "Java/class7"
     ],
     "java.project.referencedLibraries": [
         "test-lib\\**\\*.jar"

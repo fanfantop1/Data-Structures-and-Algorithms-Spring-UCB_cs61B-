@@ -8,9 +8,9 @@ public class SLList {
     public InNode(int i, InNode n) {
         item = i;
         next = n;
-    }
+        }
     
-}
+    }
 
     public InNode sentinel;
     public int size;
