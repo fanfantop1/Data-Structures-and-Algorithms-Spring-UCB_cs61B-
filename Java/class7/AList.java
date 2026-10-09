@@ -2,15 +2,31 @@ public class AList {
     private int[] item;
     int size;
 
-    public AList() {
-        item = new int[999];
+    public AList(int x) {
+        item = new int[x];
         size = 0;
     }
 
     public int intSize() {
         return size;
     }
+
+    public void resized(int size) {
+        int i = 0;
+        int[] resized =new int[size+1];
+            while(i == size) {
+                resized[i] = item[i];
+                i += 1;
+            }
+            item = resized;
+
+    }
+
     public void addlast(int x) {
+        if (size == item.length) {
+            resized(size * 2);//Optimizer: use *
+            }
+        
         item[size] = x;
         size += 1;
     }
@@ -19,7 +35,7 @@ public class AList {
     }
 
     public static void main() {
-        AList N = new AList();
+        AList N = new AList(9);
         N.addlast(9);
         N.addlast(65);
         N.addlast(565);
