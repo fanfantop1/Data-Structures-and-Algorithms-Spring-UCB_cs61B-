@@ -1,7 +1,7 @@
 import static com.google.common.truth.Truth.assertThat;
 import org.junit.Test;
 
-public class testDLList {
+public class class7 {
 
 
     @Test 
@@ -18,7 +18,7 @@ public class testDLList {
 
         AList B = new AList();
         B.addlast(1);
-        
+
 
 
          assertThat(1).isEqualTo(A);
