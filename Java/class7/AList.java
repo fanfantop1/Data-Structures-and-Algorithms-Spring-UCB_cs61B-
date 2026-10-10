@@ -1,9 +1,9 @@
-public class AList {
-    private int[] item;
+public class AList<T> {
+    private T[] item;
     int size;
 
     public AList(int x) {
-        item = new int[x];
+        item = (T[]) new Object[x];
         size = 0;
     }
 
@@ -11,34 +11,34 @@ public class AList {
         return size;
     }
 
-    public void resized(int size) {
-        int i = 0;
-        int[] resized =new int[size+1];
-            while(i == size) {
-                resized[i] = item[i];
-                i += 1;
-            }
-            item = resized;
+    // public void resized(int size) {
+    //     int i = 0;
+    //     int[] resized =new int[size+1];
+    //         while(i == size) {
+    //             resized[i] = item[i];
+    //             i += 1;
+    //         }
+    //         item = resized;
 
-    }
+    // }
 
-    public void addlast(int x) {
-        if (size == item.length) {
-            resized(size * 2);//Optimizer: use *
-            }
+    // public void addlast(int x) {
+    //     if (size == item.length) {
+    //         resized(size * 2);//Optimizer: use *
+    //         }
         
-        item[size] = x;
-        size += 1;
-    }
-    public int getIndex(int x) {
+    //     item[size] = x;
+    //     size += 1;
+    // }
+    public T getIndex(int x) {
         return item[x];
     }
 
     public static void main() {
-        AList N = new AList(9);
-        N.addlast(9);
-        N.addlast(65);
-        N.addlast(565);
+        AList<Integer> N = new AList<>(9);
+        // N.addlast(9);
+        // N.addlast(65);
+        // N.addlast(565);
         N.getIndex(2);
         IO.println(N.getIndex(0));
     }

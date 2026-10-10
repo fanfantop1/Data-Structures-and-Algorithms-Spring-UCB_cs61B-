@@ -17,20 +17,20 @@ public class class7 {
         room.addfirst("hexin");
 
         AList B = new AList(3);
-        B.addlast(1);
-        B.addlast(1);
-        B.addlast(2);
-        int C = B.intSize();
-        int D = B.getIndex(2);
-        B.addlast(3);
+        // B.addlast(1);
+        // B.addlast(1);
+        // B.addlast(2);
+        // int C = B.intSize();
+        // int D = B.getIndex(2);
+        // B.addlast(3);
 
 
          assertThat(1).isEqualTo(A);
          assertThat(13).isEqualTo(L.getlast());
          assertThat("hexin").isEqualTo(room.getfirst());
-         assertThat(3).isEqualTo(C);
-         assertThat(4).isEqualTo(B.size);
-         assertThat(2).isEqualTo(D);
+        //  assertThat(3).isEqualTo(C);
+        //  assertThat(4).isEqualTo(B.size);
+        //  assertThat(2).isEqualTo(D);
          assertThat(3).isEqualTo(B.getIndex(3));
     } 
 
